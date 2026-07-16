@@ -42,3 +42,29 @@ wget -c --tries=0 https://huggingface.co/datasets/suddhu/Feelsight/resolve/main/
 wget -c --tries=0 https://huggingface.co/datasets/suddhu/Feelsight/resolve/main/feelsight_occlusion.tar.gz
 wget -c --tries=0 https://huggingface.co/datasets/suddhu/Feelsight/resolve/main/feelsight_real.tar.gz
 ~~~
+
+6. git param set
+
+~~~
+git config --global user.email dhemdutt@gmail.com
+git config --global user.name "Hem Dutt Dabral"
+~~~
+
+7. download models
+
+- tactile transformer
+
+~~~
+mkdir -p data/tactile_transformer
+wget -c --tries=0 https://huggingface.co/suddhu/tactile_transformer/resolve/main/dpt_real.p
+wget -c --tries=0 https://huggingface.co/suddhu/tactile_transformer/resolve/main/dpt_sim.p
+~~~
+
+- segment anything
+~~~
+mkdir -p data/segment-anything && cd data/segment-anything
+for model in sam_vit_h_4b8939.pth sam_vit_l_0b3195.pth sam_vit_b_01ec64.pth; do
+  gdown https://dl.fbaipublicfiles.com/segment_anything/$model
+done
+cd ../..
+~~~
