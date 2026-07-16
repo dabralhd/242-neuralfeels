@@ -1,6 +1,6 @@
 1. clone repository
-git clone https://github.com/dabralhd/242-neuralfeels.git
-cd /root/242-neuralfeels
+git clone https://github.com/dabralhd/nrfl242.git
+cd /root/nrfl242
 
 2. install micromamba
 https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html
@@ -11,7 +11,7 @@ curl -Ls https://micro.mamba.pm/api/micromamba/$(uname)-$(uname -m)/latest | tar
 
 - add micromamba to path
 ~~~
-export PATH=/root/242-neuralfeels/bin:$PATH
+export PATH=/root/nrfl242/bin:$PATH
 ~~~
 
 then do this once (why?)
